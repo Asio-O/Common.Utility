@@ -75,11 +75,11 @@ namespace HD.Helper.Common
         /// <returns></returns>
         public static bool IsMobile(string source)
         {
-            return Regex.IsMatch(source, @"^1[35]\d{9}$", RegexOptions.IgnoreCase);
+            return Regex.IsMatch(source, @"^1[3456789]\d{9}$", RegexOptions.IgnoreCase);
         }
         public static bool HasMobile(string source)
         {
-            return Regex.IsMatch(source, @"1[35]\d{9}", RegexOptions.IgnoreCase);
+            return Regex.IsMatch(source, @"1[3456789]\d{9}", RegexOptions.IgnoreCase);
         }
         #endregion
         #region 验证IP
